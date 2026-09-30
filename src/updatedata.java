@@ -7,7 +7,7 @@ public class updatedata {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/u1", "root", "lahari@1508");
+                    "jdbc:mysql://127.0.0.1:3306/mysql1", "root", "lahari@1508");
 
             Statement st = con.createStatement();
             st.execute("UPDATE emp SET salary = 5000  WHERE emp_id = 2");
